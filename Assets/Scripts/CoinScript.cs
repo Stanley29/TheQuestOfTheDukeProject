@@ -18,7 +18,6 @@ public class CoinScript : MonoBehaviour {
         // Setting up the references.
         player = GameObject.FindGameObjectWithTag("Player");
         sound = GetComponent<AudioSource>();
-        //Debug.Log("Awake");
     }
 
     // Update is called once per frame
@@ -28,21 +27,14 @@ public class CoinScript : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
-       // sound.Play();
         // If the entering collider is the player...
         if (other.gameObject == player)
         {
             // Increase the score by the enemy's score value.
             ScoreManager.score += scoreCoinValue;
-            //InventoryManager.items.Add(this.gameObject);
-           // player.GetComponent<InventoryManager>().items.Add(this.gameObject);
-           // sound.Play();
 
-            //sound.enabled = true;
             Debug.Log("Sound");
 
-           // this.gameObject.SetActive(false);
-            // After 2 seconds destory the enemy.
             Destroy(gameObject, 0f);
             
         }

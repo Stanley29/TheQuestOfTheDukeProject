@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class SceneSwitch : MonoBehaviour
 {
     int y = SceneManager.GetActiveScene().buildIndex;
-    void OnTriggerEnter(Collider ChangeScene) // can be Collider HardDick if you want.. I'm not judging you
+    void OnTriggerEnter(Collider ChangeScene)
     {
         if (ChangeScene.gameObject.CompareTag("Player") && ScoreManager.score >= 1)
         {

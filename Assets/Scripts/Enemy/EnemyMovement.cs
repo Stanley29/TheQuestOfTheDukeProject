@@ -33,16 +33,5 @@ public class EnemyMovement : MonoBehaviour
                 Debug.Log("Lost target");
             }
         }
-
-
-        //if (enemyHealth.currentHealth > 0 && playerHealth.currentHealth > 0)
-        //{
-        //    nav.SetDestination(player.position);
-        //}
-        //else
-        //{
-        //    nav.enabled = false;
-        //}
-        //nav.SetDestination(player.position);
     }
 }
